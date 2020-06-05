@@ -5,5 +5,7 @@ describe('user can be greeted', () => {
         cy.get('h1').contains('Greetings')
     })
 
-    
+    it('A greeting message should be shown', () => {
+        cy.get('#message').should('contain', 'hello how are you' )
+    })
 })
